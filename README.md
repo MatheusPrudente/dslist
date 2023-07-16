@@ -10,18 +10,20 @@
 </p>
 
 
-## 	:rocket: Tecnologias 
+## Tecnologias 
 
 Este projeto foi desenvolvido com as seguintes tecnologias : 
 
-- Java
+- Java (17)
 - Spring Boot
+- JPA / Hibernate
+- Maven
 
-## :desktop_computer: Projeto
+## Projeto
 
   Projeto foi desenvolvido durante o curso *__Intensivão Java Spring__* oferecida pela [DevSuperior](https://devsuperior.com.br). O projeto consiste em uma Api Rest de Gerenciamento de Entregas
 
-## :books: Diagrama de Classes
+## Diagrama de Classes
 ![image](https://github.com/MatheusPrudente/dslist/assets/80559882/8874bb22-4ac1-4ee0-a148-45ec73fef224)
 
 ## :bookmark_tabs: Documentação da API
@@ -32,11 +34,13 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
   http://localhost:8080/dslist/
 ```
 
+
 #### Obter Listagem dos Games Cadastrados
 
 ```https
   GET /games
 ```
+
 
 #### Buscar Listagem dos Games Cadastrados Pelo Id
 
@@ -48,11 +52,13 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
 | :---------- | :--------- | :---------------------------------- |
 | `id` | `Long` | **Obrigatório**. Id do Game |
 
+
 #### Obter Listagem das Listas de Games Cadastrados
 
 ```https
   GET /lists
 ```
+
 
 #### Buscar Listagem das Listas de Games Cadastrados Pelo Id da Lista
 
@@ -63,6 +69,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `id` | `Long` | **Obrigatório**. Id da Lista de Game |
+
 
 #### Mudar a posição do Game dentro de uma Lista de Game
 
@@ -75,3 +82,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias :
 | `id` | `Long` | **Obrigatório**. Id da Lista de Game |
 | `body` | `ReplacementDTO` | **Obrigatório**. Informações da posição de origem e posição destino |
 
+
+## License
+
+Este projeto está sob a licença do MIT. Consulte o arquivo [LICENÇA](https://github.com/MatheusPrudente/dslist/blob/main/LICENSE) para mais detalhes.
