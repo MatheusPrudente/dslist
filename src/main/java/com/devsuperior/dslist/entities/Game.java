@@ -30,16 +30,16 @@ public class Game {
 	@Column(name = "PLATFORMS")
 	private String platforms;
 	
-	@Column(name = "IMGURL")
+	@Column(name = "IMG_URL")
 	private String imgUrl;
 	
 	@Column(name = "SCORE")
 	private Double score;
 	
-	@Column(name = "SHORT_DECRIPTION")
+	@Column(name = "SHORT_DESCRIPTION", columnDefinition = "TEXT")
 	private String shortDescription;
 	
-	@Column(name = "LONG_DECRIPTION")
+	@Column(name = "LONG_DESCRIPTION", columnDefinition = "TEXT")
 	private String longDescription;
 
 	public Game() {
